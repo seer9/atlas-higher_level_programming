@@ -1,0 +1,1 @@
+In this project ill be learning the ground level skills i need to know for python.
