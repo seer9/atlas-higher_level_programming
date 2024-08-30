@@ -1,0 +1,1 @@
+In this project ill be learning how to implement functions into my programs and how to use builtins and how to create a module.
