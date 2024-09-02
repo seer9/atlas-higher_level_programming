@@ -1,1 +1,1 @@
-In this repo i will be learning the basics of python and how to program in it.
+In this repo i will be learning the Python Programming Language and how to program in it!
