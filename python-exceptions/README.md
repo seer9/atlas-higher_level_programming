@@ -1,0 +1,1 @@
+In this project ill be using execptions and errors and when to use them.
