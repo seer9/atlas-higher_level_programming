@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Module for Square class"""
+"""Square class"""
 
 
 class Square:
     """A class that defines a square"""
 
-    def __init__(self, size=0, position=0):
+    def __init__(self, size=0, position=(0, 0)):
         """Initialize the square"""
         self.size = size
         self.position = position
@@ -32,10 +32,11 @@ class Square:
     @position.setter
     def position(self, value):
         """Set position"""
-        if not isinstance(value, int):
-            raise TypeError("position must be an integer")
-        if value < 0:
-            raise ValueError("position must be >= 0")
+        if (not isinstance(value, tuple) or
+                len(value) != 2 or
+                not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def area(self):
@@ -43,9 +44,10 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
-        """Prints the square"""
+        """Prints the square with # characters"""
         if self.__size == 0:
             print()
-        else:
-            for i in range(self.size):
-                print("#" * self.size)
+            return
+        [print() for _ in range(self.__position[1])]
+        for _ in range(self.__size):
+            print(" " * self.__position[0] + "#" * self.__size)
