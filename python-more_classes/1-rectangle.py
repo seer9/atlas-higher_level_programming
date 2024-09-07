@@ -2,7 +2,7 @@
 """represents a rectangle"""
 
 
-class Rectangle:
+class Rectangle():
     """rectangle"""
     pass
 
