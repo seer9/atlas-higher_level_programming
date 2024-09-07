@@ -1,0 +1,1 @@
+In this project ill be continuing to play around with class attributes and methods.
