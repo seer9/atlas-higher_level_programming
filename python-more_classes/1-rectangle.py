@@ -4,9 +4,10 @@ class Rectangle():
 
     
     def __init__(self, width=0, height=0):
-        """
-        width: width of the rectangle
-        height: height of the rectangle
+        """initializes a rectangle.
+        Args:
+            width: width of the rectangle
+            height: height of the rectangle
         """
         self.width = width
         self.height = height
