@@ -2,6 +2,7 @@
 class Rectangle():
     """rectangle"""
 
+    
     def __init__(self, width=0, height=0):
         """
         width: width of the rectangle
@@ -10,12 +11,12 @@ class Rectangle():
         self.width = width
         self.height = height
 
-    @property
+@property
     def width(self):
         """get width"""
         return self.__width
 
-    @width.setter
+@width.setter
     def width(self, value):
         """set width"""
         if not isinstance(value, int):
@@ -24,12 +25,12 @@ class Rectangle():
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @property
+@property
     def height(self):
         """get height"""
         return self.__height
 
-    @height.setter
+@height.setter
     def height(self, value):
         """set height"""
         if not isinstance(value, int):
