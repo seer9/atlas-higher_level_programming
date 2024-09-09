@@ -31,9 +31,9 @@ Testing:
 24
 
 >>> add_integer(1e50000, -1e100)
-    Traceback (most recent call last):
-        ...
-    OverflowError: cannot convert float infinity to integer
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
 
 ------
 
