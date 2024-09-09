@@ -3,10 +3,13 @@
 
 
 def matrix_divided(matrix, div):
-    """devides all teh elements in a matrix"""
+    """devides all the elements in a matrix"""
     
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
             raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+
+    if not all(isinstance(num, (int, float)) for row in matrix for num in row):
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
