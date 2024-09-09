@@ -30,10 +30,10 @@ Testing:
 >>> add_integer(13.2, 11.2)
 24
 
->>> add_integer(1e100)
+>>> add_integer(1e100, 1e100)
     Traceback (most recent call last):
         ...
-    OverflowError: a too large
+    OverflowError: a and b too large
 
 ------
 
