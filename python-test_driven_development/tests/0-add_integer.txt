@@ -35,6 +35,11 @@ Traceback (most recent call last):
 ...
 OverflowError: cannot convert float infinity to integer
 
+>>> add_integer(NaN)
+Trackback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
 ------
 
 Non-int tests
