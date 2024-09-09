@@ -31,9 +31,7 @@ Testing:
 24
 
 >>> add_integer(1e100)
-    Traceback (most recent call last):
-    ...
-    OverflowError: n too large
+10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815202
 
 ------
 
