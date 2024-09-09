@@ -6,6 +6,7 @@ def matrix_divided(matrix, div):
     """devides all the elements in a matrix"""
     err_msg = "matrix must be a matrix (list of lists) of integers/floats"
     err_msg2 = "Each row of the matrix must be a list of integers/floats"
+    
     if not (isinstance(matrix, list) or
         not all(isinstance(row, list) for row in matrix)):
         raise TypeError(err_msg)
