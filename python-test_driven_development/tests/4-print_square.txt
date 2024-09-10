@@ -24,6 +24,7 @@ Test case:
 #
 
 >>> print_square(0)
+
 Test with non-integer input (TypeError):
 
 >>> print_square(3.5)
