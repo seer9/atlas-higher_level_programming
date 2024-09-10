@@ -9,6 +9,6 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     for char in text:
-        print(char, end="")
+        print("{}".format(char))
         if char in ".:?":
                 print("\n\n", end="")
