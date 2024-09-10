@@ -41,12 +41,14 @@ TypeError: text must be a string
 Hello.
 <BLANKLINE>
 <BLANKLINE>
+<BLANKLINE>
 How are you?
 <BLANKLINE>
 <BLANKLINE>
 I'm fine:
 <BLANKLINE>
 thanks.
+<BLANKLINE>
 
 >>> text_indentation()
 Traceback (most recent call last):
