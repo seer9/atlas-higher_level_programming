@@ -1,0 +1,54 @@
+the 5-text_indentation module.
+
+----------
+
+a function that prints text with 2 new lines after each of these characters: ., ? and :.
+
+----------
+
+Export this: 
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+----------
+
+Test cases:
+
+>>> text_indentation("Hello. How are you? I'm fine: thanks.")
+Hello.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+I'm fine:
+<BLANKLINE>
+thanks.
+
+>>> text_indentation("This is a test without special characters")
+This is a test without special characters
+Test with non-string input (TypeError):
+
+>>> text_indentation(12345)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation("Hello.\n\nHow are you?\nI'm fine: thanks.")
+Hello.
+<BLANKLINE>
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+<BLANKLINE>
+I'm fine:
+<BLANKLINE>
+thanks.
+
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
