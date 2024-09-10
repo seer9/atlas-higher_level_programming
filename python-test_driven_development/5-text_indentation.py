@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module for text_indentation function"""
 
+
 def text_indentation(text):
     """indents text depending on the char position"""
     if not isinstance(text, str):
