@@ -22,10 +22,10 @@ How are you?
 I'm fine:
 <BLANKLINE>
 thanks.
+<BLANKLINE>
 
 >>> text_indentation("This is a test without special characters")
 This is a test without special characters
-Test with non-string input (TypeError):
 
 >>> text_indentation(12345)
 Traceback (most recent call last):
