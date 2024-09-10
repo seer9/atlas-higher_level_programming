@@ -10,4 +10,3 @@ def text_indentation(text):
 
         for char in text:
                 print(char, end="")
-        print() 
