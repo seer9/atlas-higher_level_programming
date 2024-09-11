@@ -45,4 +45,7 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return ""
-        return "Rectangle(width={0}, height={1})".format(self.width, self.height)
+        for _ in range(self.height):
+            for _ in range(self.width):
+                print("#", end="")
+            print()
