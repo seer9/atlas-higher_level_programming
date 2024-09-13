@@ -1,0 +1,1 @@
+In this project i will be looking into everything objects and how to use different methods.
