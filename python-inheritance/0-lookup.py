@@ -5,4 +5,4 @@
 def lookup(obj):
     """lookup function"""
 
-    return obj.__class__.__name__
+    return (dir(obj))
