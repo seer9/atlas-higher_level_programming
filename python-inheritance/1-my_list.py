@@ -2,7 +2,7 @@
 """1-my_list module"""
 
 
-class MyList(List):
+class MyList(list):
     """MyList class"""
 
 
