@@ -36,10 +36,9 @@ Testing:
 [2, 5, 6]
 
 >>> my_list = MyList("NewWorld")
-[N, e, w, W, o, r, l, d]
 
 >>> my_list.print_sorted()
-[e, d, N, W, o, r, l, w]
+['N', 'W', 'd', 'e', 'l', 'o', 'r', 'w']
 
 >>> new_list = MyList()
 
