@@ -1,0 +1,1 @@
+In this project ill be learning how to utilize all the different class, method and attributes.
