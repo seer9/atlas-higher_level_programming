@@ -7,7 +7,7 @@ def inherits_from(obj, a_class):
     that inherited (directly or indirectly) from the specified class; else False."""
 
     
-    if isinstance(obj, a_class) && type(obj) == a_class:
+    if isinstance(obj, a_class) and type(obj) == a_class:
         return True
     else:
         return False
