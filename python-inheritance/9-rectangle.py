@@ -9,6 +9,7 @@ class Rectangle(BaseGeometry):
     """retangle class inherits from BaseGeometry"""
 
     def __init__(self, width, height):
+        """initialization"""
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
@@ -21,4 +22,5 @@ class Rectangle(BaseGeometry):
 
     def __str__(self)
         """string representation"""
+        
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
