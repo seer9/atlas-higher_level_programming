@@ -1,0 +1,97 @@
+The 7-base_geometry class test case.
+
+----------------
+
+Import this:
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+----------------
+
+Test cases:
+
+# Check instantiation
+>>> r = Rectangle(2, 4)
+
+>>> isinstance(r, Rectangle)
+True
+
+# Test area
+>>> r = Rectangle(2, 4)
+
+>>> r.area()
+8
+
+# Test integer_validator() with various cases
+
+>>> bg = BaseGeometry()
+
+>>> bg.integer_validator("age", 1) 
+
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+...
+ValueError: age must be greater than 0
+
+>>> bg.integer_validator("age", -4)
+Traceback (most recent call last):
+...
+ValueError: age must be greater than 0
+
+>>> bg.integer_validator("age", "4")
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+>>> bg.integer_validator("age", (4,))
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+>>> bg.integer_validator("age", [3])
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+>>> bg.integer_validator("age", True)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+>>> bg.integer_validator("age", {3, 4})
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+>>> bg.integer_validator("age", None)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+# Test integer_validator with name "age" and value "1"
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 1)
+>>> bg.integer_validator("age", True)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+>>> bg.integer_validator("age", (4,))
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+# Check __str__ method in Rectangle class
+>>> r = Rectangle(2, 4)
+
+>>> print(r)
+##
+##
+##
+##
+
+>>> str(r)
+'##\\n##\\n##\\n##'
+
+# Check repr method in Rectangle class
+>>> repr(r)
+'Rectangle(2, 4)'
