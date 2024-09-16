@@ -5,6 +5,7 @@ The 7-base_geometry class test case.
 Import this:
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
 
 ----------------
 
