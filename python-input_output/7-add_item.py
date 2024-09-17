@@ -11,5 +11,5 @@ try:
 except FileNotFoundError:
         data = []
     
-        items.extend(sys.argv[1:])
+        data.extend(sys.argv[1:])
         save_to_json_file(data, filename)
