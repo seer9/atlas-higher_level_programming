@@ -1,0 +1,1 @@
+In this project ill be working with how to use input and output for automation. Things like opening a file, closing a file and knowing how to move the cursor in a file are some basic examples of what ill be learning.
