@@ -6,5 +6,5 @@ def read_file(filename=""):
     """reads a file and returns its content"""
 
 
-    with open(filename, encoding="utf-8") as f:
+    with open(filename) as f:
         return (f.read(), end="") 
