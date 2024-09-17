@@ -12,5 +12,5 @@ except FileNotFoundError:
         data = []
 
 for _ in range(1, len(argv)):
-        data.extend(sys.argv[1:])
+        data.append(argv[_])
         save_to_json_file(data, filename)
