@@ -9,7 +9,7 @@ def write_file(filename="", text=""):
     if filename == "" or type(filename) is not str:
         return (0)
 
-    with open(filename) as f:
+    with open(filename, 'r') as f:
         for line in f:
             idx += 1
     return (idx)
