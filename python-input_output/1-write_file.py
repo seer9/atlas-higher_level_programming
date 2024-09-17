@@ -5,11 +5,5 @@
 def write_file(filename="", text=""):
     """writes a file"""
 
-    idx = 0
-    if filename == "" or type(filename) is not str:
-        return (0)
-
-    with open(filename, 'r') as f:
-        for line in f:
-            idx += 1
-    return (idx)
+    with open(filename, "w") as f:
+        return f.write(text)
