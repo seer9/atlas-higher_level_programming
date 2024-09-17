@@ -13,12 +13,12 @@ class Student:
 
         def to_json(self, attrs=None):
                 """returns a json representation of the student"""
-            dict = {}
-            i = 0
-            if type(attrs) is list:
-                for attr in attrs:
-                    if attr in self.__dict__:
-                        dict[attr] = self.__dict__[attr]
+                dict = {}
+                i = 0
+                if type(attrs) is list:
+                    for attr in attrs:
+                        if attr in self.__dict__:
+                            dict[attr] = self.__dict__[attr]
                 return (dict)  
             else:
                 return (self.__dict__)
