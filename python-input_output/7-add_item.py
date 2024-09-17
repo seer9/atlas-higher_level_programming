@@ -14,6 +14,6 @@ try:
 except FileNotFoundError:
     data = []
 
-if len(argv) > 1:
-    data.append(argv[1])
+for _ in range(1, len(argv)):
+    data.append(argv[_])
 save_to_json_file(data, filename)
