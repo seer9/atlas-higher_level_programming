@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """This is the base class"""
 import json
 import csv
