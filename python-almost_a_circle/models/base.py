@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-"""This is the base class"""
+"""This is the file for base class"""
 import json
 import csv
 
 
 class Base:
+    """class base"""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
+      """increments the id #"""
+
       if id is not None:
         self.id = id
       else:
