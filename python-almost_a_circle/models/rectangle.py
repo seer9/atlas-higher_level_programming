@@ -48,11 +48,11 @@ class Rectangle(Base):
     def to_dictionary(self):
         """returns a dictionary representation of the square"""
         return {
-        'id': self.id,
-        'width': self.__width,
-        'height': self.__height,
-        'x': self.__x,
-        'y': self.__y
+          'id': self.id,
+          'width': self.__width,
+          'height': self.__height,
+          'x': self.__x,
+          'y': self.__y
         }
 
     @property
