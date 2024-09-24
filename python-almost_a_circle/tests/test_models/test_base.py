@@ -23,8 +23,7 @@ class TestBase(unittest.TestCase):
 
     def test_to_json_string(self):
 
-        base_inst = Base()
-        string = base_inst.to_json_str(None)
+        string = Base.to_json_str(None)
         self.assertEqual(string, '[]')
 
     def test_to_json_string_normal(self):
