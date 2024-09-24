@@ -34,13 +34,16 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update the Rectangle attributes."""
         if args:
             attrs = ['id', 'width', 'height', 'x', 'y']
             for i, value in enumerate(args):
                 if i < len(attrs):
                     setattr(self, attrs[i], value)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     @property
     def width(self):
