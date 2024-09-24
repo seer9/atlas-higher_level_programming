@@ -11,10 +11,12 @@ class TestBase(unittest.TestCase):
         self.assertIsNotNone(base.id)
 
     def test_auto_assing_id(self):
+        
         b1 = Base()
         b2 = Base()
         self.assertNotEqual(b1.id, b2.id)
 
-    def passed_id(self):
+    def test_passed_id(self):
+        
         base = Base(89)
         self.assertEqual(base.id, 89)
