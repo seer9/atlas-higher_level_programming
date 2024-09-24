@@ -46,14 +46,15 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
-      """returns a dictionary representation of the square"""
-      return {
+        """returns a dictionary representation of the square"""
+        return {
         'id': self.id,
         'width': self.__width,
         'height': self.__height,
         'x': self.__x,
         'y': self.__y
-      }
+        }
+
     @property
     def width(self):
         """Getter method for width."""
