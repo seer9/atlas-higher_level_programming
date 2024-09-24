@@ -21,9 +21,10 @@ class Base:
         """saves a list of objects to a file"""
         file_name = cls.__name__ + ".json"
         if list_objs is None:
-            return []
+            list = []
         else:
             list = [obj.to_dictionary() for obj in list_objs]
+
         with open(file_name, "w") as file:
             file.write(cls.to_json_string(list))
 
