@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import unittest
 from models.base import Base
-import json
 
 
 class TestBase(unittest.TestCase):
