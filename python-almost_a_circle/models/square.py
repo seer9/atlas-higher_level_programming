@@ -22,7 +22,7 @@ class Square(Rectangle):
                 setattr(self, attrs[i], args[i])
         else:
             for key, value in kwargs.items():
-                    setattr(self, key, value)
+                setattr(self, key, value)
 
     @property
     def size(self):
