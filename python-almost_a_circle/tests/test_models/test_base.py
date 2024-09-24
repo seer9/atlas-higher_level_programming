@@ -7,5 +7,5 @@ class TestBase(unittest.TestCase):
 
     def test_id(self):
        
-        base = Base()
-        self.assertIsNotNone(base.id)
+        b1 = Base()
+        self.assertIsNotNone(b1.id)
