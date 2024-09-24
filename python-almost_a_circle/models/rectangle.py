@@ -19,6 +19,10 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
           self.id, self.__x, self.__y, self.__width, self.height)
 
+    def area(self):
+        """returns the area of the rectangle"""
+        return (self.__width * self.__height)
+
     @property
     def width(self):
         """Getter method for width."""
