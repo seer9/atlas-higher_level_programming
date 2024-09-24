@@ -21,7 +21,7 @@ class TestBase(unittest.TestCase):
         base = Base(89)
         self.assertEqual(base.id, 89)
 
-    def test_to_json_str_none(self):
+    def test_to_json_string_none(self):
       
         base_inst = Base()
         string = base_inst.to_json_str(None)
