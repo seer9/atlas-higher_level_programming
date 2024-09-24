@@ -40,7 +40,7 @@ class Rectangle(Base):
             attrs = ['id', 'width', 'height', 'x', 'y']
             for i, value in enumerate(args):
                 if i < len(attrs):
-                    setattr(self, attrs[i], value)              
+                    setattr(self, attrs[i], value)
 
     @property
     def width(self):
