@@ -17,8 +17,7 @@ class Rectangle(Base):
 
     def __str__(self) -> str:
       """Return the readable string rep of the Rectangle."""
-      return "[Rectangle] ({}) {}/{} - {}/{}".format(
-          self.id, self.x, self.y, self.width, self.height
+      return "[Rectangle] {}/{}".format(self.__width, self.__height
       )
     
     @property
