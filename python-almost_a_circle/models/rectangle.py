@@ -6,7 +6,6 @@ from models.base import Base
 class Rectangle(Base):
     """initializes a rectangle"""
 
-
     def __init__(self, width=0, height=0, x=0, y=0, id=None):
         """initializes a rectangle"""
         self.width = width
@@ -18,9 +17,8 @@ class Rectangle(Base):
     def __str__(self) -> str:
         """Return the readable string rep of the Rectangle."""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
-        self.id, self.__x, self.__y, self.__width, self.height
-    )
-    
+        self.id, self.__x, self.__y, self.__width, self.height)
+
     @property
     def width(self):
         """Getter method for width."""
