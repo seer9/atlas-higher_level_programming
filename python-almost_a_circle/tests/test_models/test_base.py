@@ -7,5 +7,10 @@ class TestBase(unittest.TestCase):
 
     def test_id(self):
        
+        base = Base()
+        self.assertIsNotNone(base.id)
+
+    def test_auto_assing_id(self):
         b1 = Base()
-        self.assertIsNotNone(b1.id)
+        b2 = Base()
+        self.assertNotEqual(b1.id, b2.id)
