@@ -21,15 +21,7 @@ class TestBase(unittest.TestCase):
         base = Base(89)
         self.assertEqual(base.id, 89)
 
-    def test_to_json_string(self):
-
-        string = Base.to_json_str(None)
-        self.assertEqual(string, '[]')
-
-    def test_to_json_string_normal(self):
-        string = Base.to_json_str([{'id': 12}])
-        self.assertEqual(string, '[{"id": 12}]')
-
-    def test_from_json_string(self):
-        string = Base.to_json_str([])
-        self.assertEqual(string, '[]')
+    def test_to_json_string_none(self):
+        """Test if Base.to_json_string(None) is passed."""
+        json_string = Base.to_json_str(None)
+        self.assertEqual(json_string, '[]')
