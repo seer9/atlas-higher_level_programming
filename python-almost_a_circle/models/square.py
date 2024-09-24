@@ -12,17 +12,19 @@ class Square(Rectangle):
     def __str__(self):
         """returns a string representation of the square"""
         return "[Square] ({}) {}/{} - {}".format(
-          self.id, self.x, self.y, self.width)
+            self.id, self.x, self.y, self.width)
 
     def update(self, *args, **kwargs):
         """Update the Square attributes."""
         if args:
-            attrs = ["id", "size", "x", "y"]
-            for i in range(len(args)):
-                setattr(self, attrs[i], args[i])
+                attrs = ["id", "size", "x", "y"]
+                for i, value in enumerate(args):
+                    if i < len(attrs):
+                         setattr(self, attrs[i], args[i])
         else:
-            for key, value in kwargs.items():
-                setattr(self, key, value)
+
+                for key, value in kwargs.items():
+                        setattr(self, key, value)
 
     @property
     def size(self):
