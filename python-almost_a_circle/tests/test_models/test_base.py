@@ -16,5 +16,5 @@ class TestBase(unittest.TestCase):
         self.assertNotEqual(b1.id, b2.id)
 
     def passed_id(self):
-        base = Base(42)
-        self.assertEqual(base.id, 42)
+        base = Base(89)
+        self.assertEqual(base.id, 89)
