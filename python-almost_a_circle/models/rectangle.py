@@ -16,9 +16,10 @@ class Rectangle(Base):
         super().__init__(id)
 
     def __str__(self) -> str:
-      """Return the readable string rep of the Rectangle."""
-      return "[Rectangle] {}/{}".format(self.__width, self.__height
-      )
+        """Return the readable string rep of the Rectangle."""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+        self.id, self.__x, self.__y, self.__width, self.height
+    )
     
     @property
     def width(self):
@@ -47,3 +48,31 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
+
+    @property
+    def x(self):
+        """Getter method for x."""
+        return self.__x
+    
+    @x.setter
+    def x(self, value):
+        """Sets the value of x."""
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = value
+    
+    @property
+    def y(self):
+        """Getter method for y."""
+        return self.__y
+    
+    @y.setter
+    def y(self, value):
+        """Sets the value of y."""
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = value
