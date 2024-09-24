@@ -5,6 +5,7 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """square class"""
+    
     def __init__(self, size, x=0, y=0, id=None):
         """initializes a square"""
         super().__init__(size, size, x, y, id)
@@ -26,13 +27,13 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                   setattr(self, key, value)
 
-  @property
-  def size(self):
-    """getter method for size"""
-    return self.width
+    @property
+    def size(self):
+        """getter method for size"""
+        return self.width
 
-  @size.setter
-  def size(self, value):
-    """setter method for size"""
-    self.width = value
-    self.height = value
+    @size.setter
+    def size(self, value):
+        """setter method for size"""
+        self.width = value
+        self.height = value
