@@ -14,3 +14,7 @@ class TestBase(unittest.TestCase):
         b1 = Base()
         b2 = Base()
         self.assertNotEqual(b1.id, b2.id)
+
+    def passed_id(self):
+        base = Base(42)
+        self.assertEqual(base.id, 42)
