@@ -15,3 +15,10 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_str(obj):
+        """Converts an object to a JSON string."""
+        if obj is None:
+            return '[]'
+        return json.dumps(obj)
