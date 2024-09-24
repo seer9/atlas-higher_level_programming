@@ -34,20 +34,18 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def update(self, *args, **kwargs):
+    def update(self, *args):
         """updates the rectangle"""
         if args:
-            if len(args) == 1:
-                self.width = args[0]
-                self.height = args[0]
-            elif len(args) == 2:
-                self.width = args[0]
-                self.height = args[1]
-            elif len(args) == 4:
-                self.x = args[0]
-                self.y = args[1]
-                self.width = args[2]
-                self.height = args[3]              
+            if len(args) == 3:
+                self.width = args[1]
+                self.height = args[2]
+            elif len(args) == 5:
+                self.id = args[0]
+                self.x = args[1]
+                self.y = args[2]
+                self.width = args[3]
+                self.height = args[4]              
 
     @property
     def width(self):
