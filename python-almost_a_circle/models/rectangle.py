@@ -23,6 +23,17 @@ class Rectangle(Base):
         """returns the area of the rectangle"""
         return (self.__width * self.__height)
 
+    def display(self):
+        """displays the rectangle"""
+        for _ in range(self.__y):
+            print()
+        for _ in range(self.__height):
+            for _ in range(self.__x):
+                print(" ", end="")
+            for _ in range(self.__width):
+                print("#", end="")
+            print()
+
     @property
     def width(self):
         """Getter method for width."""
