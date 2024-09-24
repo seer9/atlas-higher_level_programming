@@ -38,6 +38,7 @@ class Rectangle(Base):
         """updates the rectangle"""
         if args:
             if len(args) == 3:
+                self.id = args[0]
                 self.width = args[1]
                 self.height = args[2]
             elif len(args) == 5:
