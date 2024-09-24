@@ -8,7 +8,6 @@ class TestBase(unittest.TestCase):
     """Test class for Base"""
 
     def test_id(self):
-        """Testing for an id"""
-        Base.__nb_objects = 0
+        """Testing for auto assign id"""
         base = Base()
         self.assertIsNotNone(base.id)
