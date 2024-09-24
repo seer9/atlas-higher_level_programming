@@ -15,7 +15,12 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-
+    def __str__(self) -> str:
+      """Return the readable string rep of the Rectangle."""
+      return "[Rectangle] ({}) {}/{} - {}/{}".format(
+          self.id, self.x, self.y, self.width, self.height
+      )
+    
     @property
     def width(self):
         """Getter method for width."""
