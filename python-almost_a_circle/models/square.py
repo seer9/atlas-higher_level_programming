@@ -20,8 +20,8 @@ class Square(Rectangle):
             attrs = ["id", "size", "x", "y"]
             for i in range(len(args)):
                 setattr(self, attrs[i], args[i])
-            else:
-                for key, value in kwargs.items():
+        else:
+            for key, value in kwargs.items():
                     setattr(self, key, value)
 
     @property
