@@ -53,7 +53,7 @@ class Rectangle(Base):
     def x(self):
         """Getter method for x."""
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         """Sets the value of x."""
@@ -62,12 +62,12 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
-    
+
     @property
     def y(self):
         """Getter method for y."""
         return self.__y
-    
+
     @y.setter
     def y(self, value):
         """Sets the value of y."""
