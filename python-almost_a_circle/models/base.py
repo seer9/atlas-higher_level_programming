@@ -19,6 +19,6 @@ class Base:
     @staticmethod
     def to_json_str(obj):
         """Converts an object to a JSON string."""
-        if obj is None:
+        if obj is None or len(obj) == 0:
             return '[]'
         return json.dumps(obj)
