@@ -25,3 +25,30 @@ class TestRectangle(unittest.TestCase):
       self.assertEqual(rect3.height, 2)
       self.assertEqual(rect3.x, 3)
       self.assertEqual(rect3.y, 4)
+
+    def test_invalid_init(self):
+      """test if rectangle("1", 2) raises a TypeError"""
+      with self.assertRaises(TypeError):
+        rect = Rectangle("1", 2)
+
+      """test if rectangle(1, "2") raises a TypeError"""
+      with self.assertRaises(TypeError):
+        rect = Rectangle(1, "2")
+
+      """test if rectangle(1, 2, "3") raises a TypeError"""
+      with self.assertRaises(TypeError):
+        rect = Rectangle(1, 2, "3")
+
+      """test if rectangle(1, 2, 3, "4") raises a TypeError"""
+      with self.assertRaises(TypeError):
+        rect = Rectangle(1, 2, 3, "4")
+
+      """test if rectangle(-1, 2) raises a ValueError"""
+      with self.assertRaises(ValueError):
+        rect = Rectangle(-1, 2)
+
+      """test if rectangle(1, -2) raises a ValueError"""
+      with self.assertRaises(ValueError):
+        rect = Rectangle(1, -2)
+
+  
