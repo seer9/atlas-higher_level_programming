@@ -40,6 +40,18 @@ class Base:
             dummy.update(**dictionary)
             return dummy
 
+    @classmethod
+    def load_from_file(cls):
+        """loads a list of objects from a file"""
+        file_name = cls.__name__ + ".json"
+        list_dict = []
+        with open(file_name, "r") as file:
+            list_dict = json.load(file)
+        list_objs = []
+        for dict_obj in list_dict:
+            list_objs.append(cls.create(**dict_obj))
+        return list_objs
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """Converts an object to a JSON string."""
