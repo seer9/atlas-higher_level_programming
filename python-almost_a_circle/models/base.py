@@ -28,6 +28,11 @@ class Base:
         with open(file_name, "w") as file:
             file.write(cls.to_json_string(list))
 
+    @classmethod
+    def create(cls, **dictionary):
+        """creates an object from a dictionary"""
+        return cls(**dictionary)
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """Converts an object to a JSON string."""
