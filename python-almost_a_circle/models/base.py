@@ -44,9 +44,14 @@ class Base:
     def load_from_file(cls):
         """loads a list of objects from a file"""
         file_name = cls.__name__ + ".json"
-        list_dict = []
-        with open(file_name, "r") as file:
-            list_dict = json.load(file)
+
+        try:
+            with open(file_name, "r") as file:
+                json_string = file.read()
+                list_dict = cls.from_json_string(json_string)
+        except FileNotFoundError:
+            list_dict = []
+
         list_objs = []
         for dict_obj in list_dict:
             list_objs.append(cls.create(**dict_obj))
