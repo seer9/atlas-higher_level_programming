@@ -61,4 +61,21 @@ class TestRectangle(unittest.TestCase):
       with self.assertRaises(ValueError):
         rect = Rectangle(1, -2)
 
+      """test if rectangle(0, 2) raises a ValueError"""
+      with self.assertRaises(ValueError):
+        rect = Rectangle(0, 2)
+
+      """test if rectangle(1, 0) raises a ValueError"""
+      with self.assertRaises(ValueError):
+        rect = Rectangle(1, 0)
+
+      """test if rectangle(1, 2, -3) raises a ValueError"""
+      with self.assertRaises(ValueError):
+        rect = Rectangle(1, 2, -3)
+
+      """test if rectangle(1, 2, 3, -4) raises a ValueError"""
+      with self.assertRaises(ValueError):
+        rect = Rectangle(1, 2, 3, -4)
+
+
   
