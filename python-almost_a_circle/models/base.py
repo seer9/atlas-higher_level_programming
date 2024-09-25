@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """This is the file for base class"""
 import json
-from .rectangle import Rectangle
 
 
 class Base:
@@ -32,12 +31,14 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """creates an object from a dictionary"""
+        dummy = None
         if cls.__name__ == "Rectangle":
             dummy = cls(1, 1)
-        else if cls.__name__ == "Square":
+        elif cls.__name__ == "Square":
             dummy = cls(1)
-        dummy.update(**dictionary)
-        return dummy
+        if dummy is not None:
+            dummy.update(**dictionary)
+            return dummy
 
     @staticmethod
     def to_json_string(list_dictionaries):
