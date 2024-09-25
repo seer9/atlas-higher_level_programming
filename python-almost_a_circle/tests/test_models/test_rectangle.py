@@ -26,6 +26,16 @@ class TestRectangle(unittest.TestCase):
       self.assertEqual(rect3.x, 3)
       self.assertEqual(rect3.y, 4)
 
+      """test if rectangle(1, 2, 3, 4, 5) exists"""
+      rect4 = Rectangle(1, 2, 3, 4, 5)
+      self.assertIsInstance(rect4, Rectangle)
+      self.assertEqual(rect4.width, 1)
+      self.assertEqual(rect4.height, 2)
+      self.assertEqual(rect4.x, 3)
+      self.assertEqual(rect4.y, 4)
+      self.assertEqual(rect4.id, 5)
+
+
     def test_invalid_init(self):
       """test if rectangle("1", 2) raises a TypeError"""
       with self.assertRaises(TypeError):
