@@ -77,5 +77,9 @@ class TestRectangle(unittest.TestCase):
       with self.assertRaises(ValueError):
         rect = Rectangle(1, 2, 3, -4)
 
+      """test if area exist"""
+      def test_area(self):
+        rect = Rectangle(1, 2)
+        self.assertEqual(rect.area(), 2)
 
   
