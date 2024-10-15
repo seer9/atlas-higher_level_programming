@@ -1,0 +1,1 @@
+This project is going to teach me SQL to manipulate data in a database using tables.
