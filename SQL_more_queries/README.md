@@ -1,0 +1,1 @@
+This project is going to showcase my ability to manage permissions of user a mysql server.
