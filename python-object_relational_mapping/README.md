@@ -1,0 +1,1 @@
+In this project ill be using python scripts to manipulate databases in mysql.
