@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-
+"""
+this is my script to lists states
+"""
 import MySQLdb
 import sys
+
 
 if __name__ == "__main__":
 
