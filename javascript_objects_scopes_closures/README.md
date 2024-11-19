@@ -1,0 +1,1 @@
+i will be learning the importants of scope and closure when working with objects.
