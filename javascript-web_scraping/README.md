@@ -1,0 +1,1 @@
+For this project ill be touching on web scraping and reading file text.
