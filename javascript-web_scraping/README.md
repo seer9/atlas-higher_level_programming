@@ -1,1 +1,1 @@
-For this project ill be touching on web scraping and reading file text.
+For this project ill be touching on web scraping and reading and writing files.
