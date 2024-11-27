@@ -1,1 +1,1 @@
-In this project ill be using jquery.
+In this project ill be using jquery and learning DOM manipulation with JavaScript.
