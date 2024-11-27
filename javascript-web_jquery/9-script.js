@@ -1,4 +1,4 @@
-#!/usr/bin/js
+#!/usr/bin/node
 /* global $ */
 
 $(document).ready(function () {
